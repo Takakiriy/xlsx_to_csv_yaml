@@ -37,7 +37,7 @@ For mac:
 
     Install packages used by xlsx_to_csv_yaml:
         - Launchpad >> Terminal
-        - npm install -g  xlsx  indent-string
+        - npm install  xlsx  indent-string
 
     Add execution attributes to "xlsx_to_csv_yaml.command" file:
         - chmod +x xlsx_to_csv_yaml.command

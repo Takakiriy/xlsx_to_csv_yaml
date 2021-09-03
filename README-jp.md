@@ -33,9 +33,9 @@ mac の場合
         - ダウンロードしたファイル（例：node-v14.16.0.pkg）を開きます
         - インストール オプションはデフォルトを使用
 
-    xlsx_to_csv_yaml が使う commander パッケージをインストールします:
+    xlsx_to_csv_yaml が使う xlsx, indent-string パッケージをインストールします:
         - Launchpad >> Terminal
-        - npm install -g  xlsx  indent-string
+        - npm install  xlsx  indent-string
 
     xlsx_to_csv_yaml.command ファイルに実行属性を追加します:
         - chmod +x xlsx_to_csv_yaml.command

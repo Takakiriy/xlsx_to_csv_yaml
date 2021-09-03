@@ -1,8 +1,12 @@
-import readline from 'readline';
-import xlsx from 'xlsx';
+import * as readline from 'readline';
+import * as xlsx from 'xlsx';
 import * as path from 'path';
-import fs from "fs";  // file system
+import * as fs from "fs";  // file system
 import indentString from 'indent-string';
+
+const inputDefault: string[] = [
+	String.raw `../test/test_data.xlsx`,
+];
 
 async function  main() {
 	const  xlsxPath = await inputPath(`input .xlsx file path> `);
@@ -80,9 +84,7 @@ class InputOption {
 }
 
 // inputOption
-const inputOption = new InputOption([
-//	String.raw `c:/Users/user1/Downloads/会計令和3年.xlsx`,
-]);
+const inputOption = new InputOption(inputDefault);
 
 // input
 // Example: const name = await input('What is your name? ');
