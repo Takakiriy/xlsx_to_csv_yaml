@@ -5,4 +5,4 @@ export  parent_path="${script_file_path%/*}"
 cd  "${parent_path}"
 export  NODE_PATH=/usr/local/lib/node_modules
 
-node  build/xlsx_to_csv_yaml.js
+node  build/src/xlsx_to_csv_yaml.js

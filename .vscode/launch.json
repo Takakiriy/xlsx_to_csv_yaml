@@ -6,9 +6,9 @@
             "request": "launch",
             "name": "Run TypeScript",
             "preLaunchTask": "TypeScript Compile Task",
-            "program": "${workspaceFolder}/src/main_test.ts",
+            "program": "${workspaceFolder}/build/test/main_test.js",
             "args": [],
-            "cwd": "${workspaceFolder}/src",
+            "cwd": "${workspaceFolder}/test",
             "smartStep": true,
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"

@@ -19,7 +19,7 @@ Windows の場合
 
     xlsx_to_csv_yaml が使うパッケージをインストールします:
         - Windows スタート >> PowerShell
-        - npm install -g  xlsx  indent-string
+        - npm install  xlsx  indent-string
 
     xlsx_to_csv_yaml.bat ファイルをダブルクリックすると xlsx_to_csv_yaml が起動します:
 
@@ -35,7 +35,10 @@ mac の場合
 
     xlsx_to_csv_yaml が使う xlsx, indent-string パッケージをインストールします:
         - Launchpad >> Terminal
-        - npm install  xlsx  indent-string
+        - cd ___/xlsx_to_csv_yaml
+        - npm install --only=production
+
+    node_modules_patch/indent-string を node_modules にコピーします。
 
     xlsx_to_csv_yaml.command ファイルに実行属性を追加します:
         - chmod +x xlsx_to_csv_yaml.command
@@ -46,6 +49,7 @@ mac の場合
 ## 使い方
 
 Windows の場合、xlsx_to_csv_yaml.bat をダブルクリックして、下記のように入力します。
+mac の場合、xlsx_to_csv_yaml.command をダブルクリックして、下記のように入力します。
 
     input .xlsx file path> example.xlsx
 

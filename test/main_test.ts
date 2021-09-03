@@ -1,6 +1,6 @@
 ﻿import * as child_process from 'child_process';
 
-const  scriptPath = '../build/xlsx_to_csv_yaml.js';
+const  scriptPath = '../build/src/xlsx_to_csv_yaml.js';
 
 async function  main() {
 	await callChildProccess(`node ${scriptPath}`);
