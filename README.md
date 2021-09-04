@@ -21,7 +21,10 @@ For Windows:
 
     Install packages used by xlsx_to_csv_yaml:
         - Windows Start >> PowerShell
-        - npm install -g  xlsx  indent-string
+        - cd ___/xlsx_to_csv_yaml
+        - npm install --only=production
+
+    copy node_modules_patch/indent-string to node_modules.
 
     To start xlsx_to_csv_yaml, double click xlsx_to_csv_yaml.bat file:
 
@@ -37,7 +40,10 @@ For mac:
 
     Install packages used by xlsx_to_csv_yaml:
         - Launchpad >> Terminal
-        - npm install  xlsx  indent-string
+        - cd ___/xlsx_to_csv_yaml
+        - npm install --only=production
+
+    copy node_modules_patch/indent-string to node_modules.
 
     Add execution attributes to "xlsx_to_csv_yaml.command" file:
         - chmod +x xlsx_to_csv_yaml.command
@@ -48,6 +54,7 @@ For mac:
 ## First example
 
 For Windows, double click xlsx_to_csv_yaml.bat file and type:
+For mac, double click xlsx_to_csv_yaml.command file and type:
 
     input .xlsx file path> example.xlsx
 

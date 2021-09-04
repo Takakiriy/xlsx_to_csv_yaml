@@ -19,7 +19,10 @@ Windows の場合
 
     xlsx_to_csv_yaml が使うパッケージをインストールします:
         - Windows スタート >> PowerShell
-        - npm install  xlsx  indent-string
+        - cd ___/xlsx_to_csv_yaml
+        - npm install --only=production
+
+    node_modules_patch/indent-string を node_modules にコピーします。
 
     xlsx_to_csv_yaml.bat ファイルをダブルクリックすると xlsx_to_csv_yaml が起動します:
 
