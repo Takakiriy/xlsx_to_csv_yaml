@@ -2,7 +2,12 @@ node_modules
 **/.DS_Store
 
 **/*.backup
+**/_checking
+**/_changing
+**/_tmp
 **/*_changing.yml
 **/*_changing.yaml
 bin/chmod+x.command
-test/test_data.csv.yaml
+*.log
+/.env
+!.env.project
