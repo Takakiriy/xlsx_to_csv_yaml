@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import * as readline from 'readline';
 export declare function copyFolderSync(sourceFolderPath: string, destinationFolderPath: string): Promise<void>;
 export declare function copyFileSync(sourceFilePath: string, destinationFilePath: string): void;

@@ -1,8 +1,8 @@
-import * as xlsx from 'xlsx';
-import * as path from 'path';
-import * as fs from "fs";  // file system
-import * as lib from "./lib";
+import * as fs from "fs"; // file system
 import indentString from 'indent-string';
+import * as path from 'path';
+import xlsx from 'xlsx';
+import * as lib from "./lib";
 
 const inputDefault: string[] = [
 //	String.raw `../test/test_data.xlsx`,
@@ -16,7 +16,7 @@ async function  main() {
 
 	const  book = xlsx.readFile(xlsxPath);
 	for (const sheetName of book.SheetNames) {
-		let  stringOfCSV = xlsx.utils.sheet_to_csv(book.Sheets[sheetName]).replace(/\n/g,'\r\n');
+		let  stringOfCSV = xlsx.utils.sheet_to_csv(book.Sheets[sheetName]).replace(/([^\r])(\n|$)/g,'$1\r\n').replace(/,*\r/g,'\r');
 		stringOfCSV = indentString( stringOfCSV, 4, {indent: ' '} );
 
 		writer.write(`${sheetName}: |\r\n`);
